@@ -1,0 +1,25 @@
+:root {
+    --bs-gradient: linear-gradient(
+        180deg,
+        #c4aca4,
+        #d1a077 75%
+    );
+}
+
+html {
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    box-sizing: border-box;
+}
+* {
+    box-sizing: inherit;
+}
+
+body {
+    margin: 0;
+    width: 100%;
+    height: auto;
+    z-index: -1;
+    background-image: url(../picture/642cb28779472fbeebe802b8091ceb9e.webp);
+    background-size: 75px 35px;
+    background-repeat: repeat;
+}

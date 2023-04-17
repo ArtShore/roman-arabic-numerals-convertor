@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Roman-Arabic numeral Convertor</title>
+    <link
+      rel="stylesheet"
+      href="node_modules/bootstrap/dist/css/bootstrap.css" />
+    <link rel="stylesheet" href="styles/style.css" />
+    <!-- I should note that this is not a very responsive design, this is just to show some javascript capablities -->
+  </head>
+  <body>
+    <div
+      class="container border border-light border-opacity-50 bg-light bg-opacity-50 rounded-4 py-4 my-4 text-center">
+      <div class="header">
+        <!-- This is the header -->
+        <h1>Roman-Arabic Numerals Convertor</h1>
+        <p>Put down your number and convert it!</p>
+      </div>
+      <!-- this is arabic to roman -->
+      <div class="row my-5 py-5">
+        <div class="col form-floating">
+          <input
+            type="number"
+            name="arabic"
+            id="arabic-num"
+            class="form-control"
+            placeholder="Arabic" />
+          <label for="arabic-num" class="form-label ps-4">Arabic</label>
+        </div>
+        <div class="col">
+          <button class="btn btn-info align-middle" onclick="putRomanInHTML()">
+            Convert
+          </button>
+        </div>
+        <div
+          class="col card me-3 flex-row align-items-center justify-content-between">
+          <code id="roman-answer"></code
+          ><button class="btn btn-outline-info" onclick="copyText(copyRoman)">
+            Copy
+          </button>
+        </div>
+      </div>
+      <!-- this is roman to arabic -->
+      <div class="row my-5 py-5">
+        <div class="col">
+          <div class="col form-floating">
+            <input
+              type="text"
+              name="roman"
+              id="roman-num"
+              class="form-control"
+              placeholder="Roman" />
+            <label for="Roman:" class="form-label ps-4">Roman</label>
+          </div>
+        </div>
+        <div class="col">
+          <div class="col">
+            <button class="btn btn-info" onclick="putArabicInHTML()">
+              Convert
+            </button>
+          </div>
+        </div>
+        <div
+          class="col card me-3 flex-row align-items-center justify-content-between">
+          <code id="arabic-answer"></code
+          ><button class="btn btn-outline-info" onclick="copyText(copyArabic)">
+            Copy
+          </button>
+        </div>
+      </div>
+    </div>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+    <script src="scripts/main.js"></script>
+  </body>
+</html>
